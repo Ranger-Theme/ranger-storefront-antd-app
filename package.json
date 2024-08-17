@@ -1,0 +1,63 @@
+{
+  "name": "ranger-storefront-antd-emotion",
+  "version": "0.1.0",
+  "private": true,
+  "config": {
+    "cz-customizable": {
+      "config": "./.cz-config.js"
+    }
+  },
+  "scripts": {
+    "dev": "next dev -H 127.0.0.1 -p 3000",
+    "build": "next build",
+    "start": "next start -H 127.0.0.1 -p 3000",
+    "lint": "next lint",
+    "clean": "rimraf .next node_modules",
+    "preinstall": "npx only-allow pnpm",
+    "lint:ls-lint": "ls-lint",
+    "husky:prepare": "husky"
+  },
+  "dependencies": {
+    "@ant-design/cssinjs": "^1.21.0",
+    "@apollo/client": "^3.10.8",
+    "@emotion/cache": "^11.13.1",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@ranger-theme/common": "^0.3.0",
+    "@ranger-theme/core": "^0.8.0",
+    "@ranger-theme/nextjs-config": "^0.9.0",
+    "@ranger-theme/pwa-config": "^0.1.0",
+    "@reduxjs/toolkit": "^2.2.6",
+    "antd": "^5.19.1",
+    "http-proxy-middleware": "^3.0.0",
+    "lodash-es": "^4.17.21",
+    "next": "^14.2.4",
+    "only-allow": "^1.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.1.2"
+  },
+  "devDependencies": {
+    "@ls-lint/ls-lint": "^2.2.3",
+    "@ranger-theme/branchlint-config": "^0.1.0",
+    "@ranger-theme/commitizen-config": "^0.2.0",
+    "@ranger-theme/commitlint-config": "^0.4.0",
+    "@ranger-theme/eslint-config": "^0.5.0",
+    "@ranger-theme/prettier-config": "^0.2.0",
+    "@ranger-theme/stylelint-config": "^0.5.0",
+    "@ranger-theme/ts-config": "^0.1.0",
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "eslint": "^8.2.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "rimraf": "^5.0.8",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
